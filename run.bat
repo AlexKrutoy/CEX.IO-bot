@@ -22,6 +22,9 @@ if not exist venv\Lib\site-packages\installed (
     echo Dependencies already installed, skipping installation.
 )
 
+echo Copying configuration file
+copy .env-example .env
+
 echo Starting the bot...
 python main.py
 
