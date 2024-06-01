@@ -15,7 +15,7 @@ from bot.exceptions import InvalidSession
 from .headers import headers
 from .agents import generate_random_user_agent
 from datetime import datetime, timedelta, timezone
-from random import shuffle
+from random import shuffle, randint
 import json
 
 
@@ -333,7 +333,7 @@ class Tapper:
                             only_check = True
 
                         if (statuses is not None and all(statuses)) or only_check:
-                            logger.success(f'{self.session_name} | Waiting before claiming')
+                            logger.success(f'{self.session_name} | Waiting before claiming, 65 s')
                             await asyncio.sleep(delay=65)
                             none_tasks, ready_to_check_tasks = await self.getTasks(http_client=http_client,
                                                                                    tg_web_data=tg_web_data)
@@ -392,10 +392,11 @@ class Tapper:
                                 logger.success(f'{self.session_name} | Claimed taps, count: {available_taps}')
                                 await asyncio.sleep(delay=2)
                         else:
-                            status = await self.claim_taps(http_client=http_client, taps=settings.TAPS_AMOUNT,
+                            rand_taps = randint(a=settings.TAPS_AMOUNT[0], b=settings.TAPS_AMOUNT[1])
+                            status = await self.claim_taps(http_client=http_client, taps=rand_taps,
                                                        tg_web_data=tg_web_data)
                             if status is True:
-                                logger.success(f'{self.session_name} | Claimed taps, count: {settings.TAPS_AMOUNT}')
+                                logger.success(f'{self.session_name} | Claimed taps, count: {rand_taps}')
                                 await asyncio.sleep(delay=2)
                     elif cooldown != 0 and available_taps == 0:
                         logger.info(f'{self.session_name} | No taps, sleeping 1 hour')

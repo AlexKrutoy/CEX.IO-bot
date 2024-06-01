@@ -24,8 +24,12 @@ else
     echo "Dependencies already installed, skipping installation."
 fi
 
-echo "Copying configuration file"
-cp .env-example .env
+if [ ! -f ".env" ]; then
+	echo "Copying configuration file"
+	cp .env-example .env
+else
+	echo "Skipping .env copying"
+fi
 
 echo "Starting the bot..."
 python3 main.py
