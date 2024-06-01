@@ -31,3 +31,4 @@ echo "Starting the bot..."
 python3 main.py
 
 echo "done"
+echo "PLEASE EDIT .ENV FILE"
