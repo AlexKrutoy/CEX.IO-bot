@@ -20,8 +20,10 @@
 | Multithreading                                                |        ✅        |
 | Proxy binding to session                                      |        ✅        |
 | Auto-Click coin                                               |        ✅        |
-| Auto-Start farm                                               |        ✅        |
-| Random number of clicks per request                           |        🟠        |
+| Auto-Start abd Auto-Claim farm                                |        ✅        |
+| Specify number of taps                                        |        ✅        |
+| Auto-claim squad reward                                       |        ✅        |
+| Auto-start, auto-check and auto-claim tasks                   |        ✅        |
 | Support for tdata / pyrogram .session / telethon .session     |        ✅        |
 
 
