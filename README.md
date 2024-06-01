@@ -38,8 +38,6 @@
 |**CLAIM_TASKS**           | Auto tasks (one time) ((eg. True))                                                           |
 | **USE_PROXY_FROM_FILE**  | Whether to use a proxy from the bot/config/proxies.txt file (True / False)                   |
 
-# UNDER DEVELOPMENT ALL BELOW
-
 ## Quick Start 📚
 1. To install libraries on Windows, run INSTALL.bat.
 2. To run the bot, use START.bat (or in the console: python main.py).
