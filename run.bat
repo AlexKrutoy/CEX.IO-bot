@@ -29,4 +29,5 @@ echo Starting the bot...
 python main.py
 
 echo done
+echo PLEASE EDIT .ENV FILE
 pause
