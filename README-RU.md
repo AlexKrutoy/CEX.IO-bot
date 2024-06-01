@@ -2,6 +2,8 @@
 
 ![Static Badge](https://img.shields.io/badge/Telegram-Chat-yes?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue&link=https%3A%2F%2Ft.me%2Fhidden_codding_chat)
 
+![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue&link=https%3A%2F%2Ft.me%2Fcexio_tap_bot%3Fstart%3D1717162889191233)
+
 <img src="https://github.com/AlexKrutoy/CEX.IO-bot/assets/65369825/63571e45-9fc3-4982-9156-7a88f9906bc4" width="750" height="525"/>
 
 <img src="https://github.com/AlexKrutoy/CEX.IO-bot/assets/65369825/3d216564-546d-46c8-bf25-d1fbf50dd0fd" width="600" height="700"/>
