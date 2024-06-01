@@ -385,14 +385,14 @@ class Tapper:
                             logger.error(e)
 
                     if available_taps != 0 and settings.TAPS:
-                        if available_taps < settings.TAPS_AMOUNT:
+                        rand_taps = randint(a=settings.TAPS_AMOUNT[0], b=settings.TAPS_AMOUNT[1])
+                        if available_taps < rand_taps:
                             status = await self.claim_taps(http_client=http_client, taps=available_taps,
                                                            tg_web_data=tg_web_data)
                             if status is True:
                                 logger.success(f'{self.session_name} | Claimed taps, count: {available_taps}')
                                 await asyncio.sleep(delay=2)
                         else:
-                            rand_taps = randint(a=settings.TAPS_AMOUNT[0], b=settings.TAPS_AMOUNT[1])
                             status = await self.claim_taps(http_client=http_client, taps=rand_taps,
                                                        tg_web_data=tg_web_data)
                             if status is True:
