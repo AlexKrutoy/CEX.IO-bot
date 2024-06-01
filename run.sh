@@ -24,6 +24,9 @@ else
     echo "Dependencies already installed, skipping installation."
 fi
 
+echo "Copying configuration file"
+cp .env-example .env
+
 echo "Starting the bot..."
 python3 main.py
 
