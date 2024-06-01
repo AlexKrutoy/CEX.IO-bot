@@ -68,6 +68,17 @@ nano .env  # Здесь вы обязательно должны указать 
 python3 main.py
 ```
 
+Также для быстрого запуска вы можете использовать аргументы, например:
+```shell
+~/CEX.IO-bot >>> python3 main.py --action (1/2)
+# Or
+~/CEX.IO-bot >>> python3 main.py -a (1/2)
+
+# 1 - Запускает кликер
+# 2 - Создает сессию
+```
+
+
 # Windows
 ```shell
 python -m venv venv
@@ -80,9 +91,9 @@ python main.py
 
 Также для быстрого запуска вы можете использовать аргументы, например:
 ```shell
-~/CEX.IO-bot >>> python3 main.py --action (1/2)
+~/CEX.IO-bot >>> python main.py --action (1/2)
 # Или
-~/CEX.IO-bot >>> python3 main.py -a (1/2)
+~/CEX.IO-bot >>> python main.py -a (1/2)
 
 # 1 - Запускает кликер
 # 2 - Создает сессию
