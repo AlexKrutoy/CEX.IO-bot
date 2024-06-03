@@ -58,7 +58,19 @@ git clone https://github.com/AlexKrutoy/CEX.IO-bot.git
 cd CEX.IO-bot
 ```
 
-# Linux
+Затем для автоматической установки введите:
+
+Windows:
+```shell
+run.bat
+```
+
+Linux:
+```shell
+run.sh
+```
+
+# Linux ручная установка
 ```shell
 python3 -m venv venv
 source venv/bin/activate
@@ -79,7 +91,7 @@ python3 main.py
 ```
 
 
-# Windows
+# Windows ручная установка
 ```shell
 python -m venv venv
 venv\Scripts\activate
