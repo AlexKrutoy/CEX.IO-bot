@@ -39,8 +39,8 @@
 | **USE_PROXY_FROM_FILE**  | Whether to use a proxy from the bot/config/proxies.txt file (True / False)                   |
 
 ## Quick Start 📚
-1. To install libraries on Windows, run INSTALL.bat.
-2. To run the bot, use START.bat (or in the console: python main.py).
+
+To install libraries and run bot - open run.bat on Windows
 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
@@ -58,7 +58,19 @@ git clone https://github.com/AlexKrutoy/CEX.IO-bot.git
 cd CEX.IO-bot
 ```
 
-# Linux
+Then you can do automatic installation by typing:
+
+Windows:
+```shell
+run.bat
+```
+
+Linux:
+```shell
+run.sh
+```
+
+# Linux manual installation
 ```shell
 python3 -m venv venv
 source venv/bin/activate
@@ -78,7 +90,7 @@ You can also use arguments for quick start, for example:
 # 2 - Creates a session
 ```
 
-# Windows
+# Windows manual installation
 ```shell
 python -m venv venv
 venv\Scripts\activate
@@ -104,3 +116,4 @@ You can also use arguments for quick start, for example:
 ### Contacts
 
 For support or questions, contact me on Telegram: [@UNKNXWNPLXYA](https://t.me/UNKNXWNPLXYA)
+
