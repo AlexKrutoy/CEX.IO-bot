@@ -172,7 +172,7 @@ class Tapper:
                     priority = task_info.get("priority", 0)
                     state = task_info.get("state", "")
 
-                    if 8 <= priority <= 23:
+                    if 13 <= priority <= 30:
                         if state == "NONE":
                             none_tasks.append(task_id)
                         elif state == "ReadyToCheck":
