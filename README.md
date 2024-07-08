@@ -24,6 +24,7 @@
 | Specify number of taps                                        |        ✅        |
 | Auto-claim squad reward                                       |        ✅        |
 | Auto-start, auto-check and auto-claim tasks                   |        ✅        |
+| Auto referral                                                 |        ✅        |
 | Support for tdata / pyrogram .session / telethon .session     |        ✅        |
 
 
@@ -34,8 +35,9 @@
 | **FARM_MINING_ERA**      | Whether to automatically start the farm (e.g. True)                                          |                                
 | **TAPS**                 | Whether to auto-click the coin (e.g. True)                                                   |
 | **TAPS_AMOUNT**          | How many taps will be clicked (e.g. [100, 1000])                                             |
-|**CLAIM_SQUAD_REWARD**    | Auto claim squad rewards (e.g. True)                                                         |
-|**CLAIM_TASKS**           | Auto tasks (one time) ((eg. True))                                                           |
+| **CLAIM_SQUAD_REWARD**   | Auto claim squad rewards (e.g. True)                                                         |
+| **CLAIM_TASKS**          | Auto tasks (one time) ((eg. True))                                                           |
+| **REF_ID**               | Argument from referral bot link after ?start={argument}                                      |
 | **USE_PROXY_FROM_FILE**  | Whether to use a proxy from the bot/config/proxies.txt file (True / False)                   |
 
 ## Quick Start 📚
